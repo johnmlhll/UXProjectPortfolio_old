@@ -1,0 +1,21 @@
+﻿/*External CSS3 File for Responsive 768px/500px Designed - Project Portfolio */
+/*Un restricted Styling - Full Screen*/
+/*General Styling*/
+body {
+}
+
+/*Error View Styling*/
+#error_view {
+    color: red;
+}
+
+/* Restricted Styling - 768px max Screen*/
+@media only and (max-width: 768px) {
+    
+}
+/* Restricted Styling - 500px max Screen*/
+@media only and (max-width: 500px) {
+    
+}
+
+
