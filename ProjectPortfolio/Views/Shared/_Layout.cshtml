@@ -3,8 +3,60 @@
 <head>
     <title>@ViewBag.Title</title>
     <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="author" content="John Mulhall "/>
+	<meta name="description" content="Software Portolio MVC Web App showing the Portfolio of John Mulhall"/>
+	<meta name="keywords" content="software, development, csharp, asp.net, dotnot, java, razor, writing, html5, css3, spring, mvc, databases, postgresql, mysql, sqlserver, azure, cloud, bigdata, oop"/>	
+    <!--Favicon-->
+	<link rel="shortcut icon" href="~/Images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="~/Images/favicon.ico" type="image/x-icon">	
+	<!--CSS/JS Files-->	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="~/Scripts/javascript.js" type="text/javascript"></script>	
+	<link rel="Stylesheet" type="css/text" href= "~/Content/style.css"/>	
 </head>
 <body>
-	@RenderBody()
+    <div id="wrapper">
+		<!--Header-->
+		<header>
+
+		</header>
+		<!--Main Body/Views-->	
+        <main>
+		    @RenderBody()
+		</main>
+		<!--Footer-->
+		<footer>
+			<hr>
+			<!--Left hand side of footer-->
+		    <a id="logo"><img src="~/Images/imgMulhallFamilyCrest.png" alt="Image of the Mulhall Family Crest"/></a>
+			<!--Center of footer-->
+            <ul id="footer_contact_details">
+			    <li><a>Email: johnmlhll@yahoo.com</a></li>
+				<li><a>Mobile: +353 (0) 86 231 7352</a></li>
+				<li>
+					<a href="https://twitter.com/johnmlhll"><img src="~/Images/imgConnectTwitter.jpg" alt="Twitter Profile Link of John Mulhall"/></a>
+				    <a href="https://www.linkedin.com/in/johnmlhll/"><img src="~/Images/imgConnectLinkedIn.jpg" alt="LinkedIn Profile Link of John Mulhall"/></a>
+				</li>
+				<li><a>&copy; John Mulhall 2017</a></li>	
+			</ul>
+			<!--Right Hand Side of footer-->
+			<ul id="footer_social_shares">
+				<li>
+					<a href="http://www.Twitter.com/share" data-count="vertical" target="_blank"><img src="~/Images/imgShareTwitter.png" alt="Image of Twitter Share Icon for Page"/></a>
+				</li>	
+				<li>
+					<a href="http://www.Facebook.com/sharer.php?u=https://jmulhall.azurewebsites.net/@ViewBag.Title" target="_blank"><img src="~/Images/imgShareFacebook.png"/></a>
+				</li>
+				<li>
+                    <a><img src="~/Images/imgShareLinkedIn.png"/></a> 
+                </li>
+				<li>
+					<a><img src="~/Images/imgShareGooglePlus.png"/></a>	
+				</li>
+			</ul>    	
+				
+		</footer>
+	</div>
 </body>
 </html>

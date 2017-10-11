@@ -64,7 +64,6 @@
     <Folder Include="Content\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\" />
-    <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
@@ -72,6 +71,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Models\ContactModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
@@ -84,6 +84,10 @@
     <Content Include="packages.config" />
     <Content Include="Scripts\javascript.js" />
     <Content Include="Content\style.css" />
+    <Content Include="Images\imgHomerError.png" />
+    <Content Include="Images\imgMulhallFamilyCrest.png" />
+    <Content Include="Images\imgConnectLinkedin.jpg" />
+    <Content Include="Images\imgConnectTwitter.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
