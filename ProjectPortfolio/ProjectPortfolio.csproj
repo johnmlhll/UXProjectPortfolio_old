@@ -89,8 +89,9 @@
     <Content Include="Images\imgShareGooglePlus.png" />
     <Content Include="Images\imgShareTwitter.png" />
     <Content Include="Images\imgConnectLinkedin.png" />
-    <Content Include="Images\imgConnectTwitter.png" />
     <Content Include="Content\Style.css" />
+    <Content Include="Images\imgCoderJohn.jpg" />
+    <Content Include="Images\imgConnectTwitter.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\favicon.ico" />
