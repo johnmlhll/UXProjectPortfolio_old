@@ -83,14 +83,14 @@
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
     <Content Include="Scripts\javascript.js" />
-    <Content Include="Content\Style.css" />
     <Content Include="Images\imgHomerError.png" />
     <Content Include="Images\imgMulhallFamilyCrest.png" />
-    <Content Include="Images\imgConnectTwitter.jpg" />
     <Content Include="Images\imgShareFacebook.png" />
     <Content Include="Images\imgShareGooglePlus.png" />
     <Content Include="Images\imgShareTwitter.png" />
     <Content Include="Images\imgConnectLinkedin.png" />
+    <Content Include="Images\imgConnectTwitter.png" />
+    <Content Include="Content\Style.css" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\favicon.ico" />
