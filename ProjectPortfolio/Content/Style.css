@@ -44,22 +44,42 @@ ul li {
 }
 
 /*Shared View _Layout Styling*/
+
+/*Footer*/
+
+footer {
+    width: 100%;
+    resise: both;
+}
 footer hr {
     clear: both;
     width: 90%;
     margin: 1% auto;
 }
 
+/*Left Hand Side*/
 #logo {
     float: left;
-    width: 15%;
+    width: 17%;
     margin: 0.5% 0.5% 0 2%;
 }
 
+#footer_shares_linkedin {
+    margin: 2% 0 0 10.5%;
+    list-style-type: none;
+}
+
+    #footer_shares_linkedin li img {
+           border-radius: 12%;
+           width: 12%;
+    }
+
+/*Middle of Footer*/
 #footer_contact_details {
     list-style-type: none;
-    font-weight: bold;
+    font-weight: normal;
     text-align: center;
+    margin: -5% auto;
 }
 
     #footer_contact_details li a {
@@ -71,20 +91,23 @@ footer hr {
             min-width: 6%;
         }
 
-#footer_social_shares {
+ /*Left of Footer*/
+#footer_shares_twitter { /*also Styles Facebook share button*/
     box-sizing: content-box;
     list-style-type: none;
     float: right;
-    margin: -10% 0.5% 2% 0;
+    margin: -3% 2% 2% 3%;
+    display: block;
 }
 
-    #footer_social_shares li a {
-        display: inline-block;
+    #footer_shares_twitter li a {
         position: relative;
+        padding: 1%;
     }
 
-        #footer_social_shares li a img {
-            width: 80%;
+        #footer_shares_twitter li a img {
+            width: 100%;
+            border-radius: 12%;
         }
 
 /* Restricted Styling - 768px max Screen*/
