@@ -83,11 +83,17 @@
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
     <Content Include="Scripts\javascript.js" />
-    <Content Include="Content\style.css" />
+    <Content Include="Content\Style.css" />
     <Content Include="Images\imgHomerError.png" />
     <Content Include="Images\imgMulhallFamilyCrest.png" />
-    <Content Include="Images\imgConnectLinkedin.jpg" />
     <Content Include="Images\imgConnectTwitter.jpg" />
+    <Content Include="Images\imgShareFacebook.png" />
+    <Content Include="Images\imgShareGooglePlus.png" />
+    <Content Include="Images\imgShareTwitter.png" />
+    <Content Include="Images\imgConnectLinkedin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\favicon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
