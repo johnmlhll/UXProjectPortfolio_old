@@ -1,22 +1,23 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>@ViewBag.Title</title>
     <meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<meta name="author" content="John Mulhall "/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta name="description" content="Software Portolio MVC Web App showing the Portfolio of John Mulhall"/>
-	<meta name="keywords" content="software, development, csharp, asp.net, dotnot, java, razor, writing, html5, css3, spring, mvc, databases, postgresql, mysql, sqlserver, azure, cloud, bigdata, oop"/>	
+	<meta name="keywords" content="software, development, csharp, asp.net, java, writing, html5, css3, javascript, mvc, databases, postgresql, mysql, sqlserver, frameworks, technology, azure, oop"/>
+	<meta name="author" content="John Mulhall"/>	
+	<meta name="image" src="~/Images/imgCoderJohn.jpg" alt="Image of John Coding at DBS, Dublin, Ireland"/>	
+    <title>@ViewBag.Title - Software Portfolio</title>	
     <!--Favicon-->
-	<link rel="shortcut icon" href="~/Images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="~/Images/favicon.ico" type="image/x-icon">	
+    <link rel="shortcut icon" href="~/Images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="~/Images/favicon.ico" type="image/x-icon">   
 	<!--CSS/JS Files-->	
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="~/Scripts/javascript.js" type="text/javascript"></script>	
-	<link rel="Stylesheet" type="css/text" href= "~/Content/style.css"/>	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="~/Scripts/javascript.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="~/Content/Style.css"/>    	
 </head>
 <body>
-    <div id="wrapper">
+    <div id="wrapper">  
 		<!--Header-->
 		<header>
 
@@ -30,32 +31,36 @@
 			<hr>
 			<!--Left hand side of footer-->
 		    <a id="logo"><img src="~/Images/imgMulhallFamilyCrest.png" alt="Image of the Mulhall Family Crest"/></a>
+		    <ul id="footer_shares_linkedin">
+                <li>
+                    <a>
+						<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+                        <script type="IN/Share" data-url="https://jmulhall.azurewebsites.net"></script>
+					</a> 
+				</li>
+				<li>
+                    <a href="https://plus.google.com/share?url=https://jmulhall.azurewebsites.net/@ViewBag.Title" target="_blank">
+                        <img src="~/Images/imgShareGooglePlus.png"/>
+					</a> 
+                </li>
+            </ul>  
 			<!--Center of footer-->
             <ul id="footer_contact_details">
-			    <li><a>Email: johnmlhll@yahoo.com</a></li>
-				<li><a>Mobile: +353 (0) 86 231 7352</a></li>
+			    <li><a><strong>Email:</strong> johnmlhll@yahoo.com</a></li>
+				<li><a><strong>Mobile:</strong> +353 (0) 86 231 7352</a></li>
 				<li>
-					<a href="https://twitter.com/johnmlhll"><img src="~/Images/imgConnectTwitter.jpg" alt="Twitter Profile Link of John Mulhall"/></a>
-				    <a href="https://www.linkedin.com/in/johnmlhll/"><img src="~/Images/imgConnectLinkedIn.jpg" alt="LinkedIn Profile Link of John Mulhall"/></a>
+					<a href="https://twitter.com/johnmlhll" target="_blank"><img src="~/Images/imgConnectTwitter.png" alt="Twitter Profile Link of John Mulhall"/></a>
+				    <a href="https://www.linkedin.com/in/johnmlhll/" target="_blank"><img src="~/Images/imgConnectLinkedIn.png" alt="LinkedIn Profile Link of John Mulhall"/></a>
 				</li>
-				<li><a>&copy; John Mulhall 2017</a></li>	
+				<li><a><sub>&copy; John Mulhall 2017</sub></a></li>	
 			</ul>
 			<!--Right Hand Side of footer-->
-			<ul id="footer_social_shares">
+			<ul id="footer_shares_twitter">
 				<li>
 					<a href="http://www.Twitter.com/share" data-count="vertical" target="_blank"><img src="~/Images/imgShareTwitter.png" alt="Image of Twitter Share Icon for Page"/></a>
-				</li>	
-				<li>
 					<a href="http://www.Facebook.com/sharer.php?u=https://jmulhall.azurewebsites.net/@ViewBag.Title" target="_blank"><img src="~/Images/imgShareFacebook.png"/></a>
 				</li>
-				<li>
-                    <a><img src="~/Images/imgShareLinkedIn.png"/></a> 
-                </li>
-				<li>
-					<a><img src="~/Images/imgShareGooglePlus.png"/></a>	
-				</li>
-			</ul>    	
-				
+			</ul>  	
 		</footer>
 	</div>
 </body>
