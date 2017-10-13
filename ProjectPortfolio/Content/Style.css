@@ -4,9 +4,11 @@
 /*General Styling*/
 body {
     margin: 0 auto;
-    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/10/Image-of-Binary-Code.jpg");
-    background-repeat:space;
+    background-image: url("http://wallpaperget.com/images/binary-code-wallpaper-1.jpg");
+    background-repeat: round;
     background-color: #f9fcfc;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #4d4d4d;
 }
 
 #wrapper {
@@ -14,7 +16,7 @@ body {
     -webkit-box-sizing: border-box;
     margin: 1% auto;
     width: 93%;
-    padding: 2%;
+    padding: 2% 1% 2% 5%;
     border-radius: 7%;
     position: relative;
     background: -webkit-linear-gradient(#f9fcfc, #a2d6d6);
@@ -22,6 +24,26 @@ body {
     background: -moz-linear-gradient(#f9fcfc, #a2d6d6);
     background: linear-gradient(#f9fcfc, #a2d6d6);
 }
+
+#navbar {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: fixed;
+    margin: 10% 1.5% 10% -5%;
+    padding: 1%;
+    background-color: lightgray;
+    opacity: 0.5;
+    border-bottom-right-radius: 40%;
+    border-top-right-radius: 40%;
+}
+
+    #navbar ul {
+       display: none;     
+    }
+
+    #navbar h3 {
+        color: #0d0d0d;
+    }
 
 h1 {
     font-size: 1.8em;
@@ -40,7 +62,7 @@ h3, h4, h5, h6 {
 }
 
 p {
-    font-size: 1em;
+    font-size: 1.3em;
     line-height: normal;
     text-align: left;
 }
@@ -161,7 +183,7 @@ footer hr {
     }
 
     p {
-        font-size: 0.9em;
+        font-size: 1.2em;
         line-height: normal;
     }
 
@@ -189,7 +211,7 @@ footer hr {
     }
 
     p {
-        font-size: 0.9em;
+        font-size: 1em;
         line-height: normal;
     }
 
