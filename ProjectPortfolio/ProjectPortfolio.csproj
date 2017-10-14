@@ -72,6 +72,10 @@
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Models\ContactModel.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\ResumeController.cs" />
+    <Compile Include="Controllers\IrishTechNewsController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
@@ -82,7 +86,7 @@
     <Content Include="Web.config" />
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
-    <Content Include="Scripts\javascript.js" />
+    <Content Include="Scripts\Javascript.js" />
     <Content Include="Images\imgHomerError.png" />
     <Content Include="Images\imgMulhallFamilyCrest.png" />
     <Content Include="Images\imgShareFacebook.png" />
@@ -92,6 +96,11 @@
     <Content Include="Content\Style.css" />
     <Content Include="Images\imgCoderJohn.jpg" />
     <Content Include="Images\imgConnectTwitter.png" />
+    <Content Include="Images\imgMenu.png" />
+    <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\IrishTechNews\Index.cshtml" />
+    <Content Include="Views\Resume\Index.cshtml" />
+    <Content Include="Views\About\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\favicon.ico" />
