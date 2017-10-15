@@ -95,7 +95,6 @@
     <Content Include="Content\Style.css" />
     <Content Include="Images\imgCoderJohn.jpg" />
     <Content Include="Images\imgConnectTwitter.png" />
-    <Content Include="Images\imgMenu.png" />
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\IrishTechNews\Index.cshtml" />
     <Content Include="Views\Resume\Index.cshtml" />
