@@ -62,13 +62,36 @@ p, li {
 
 /*Shared View _Layout Styling*/
 
+/*Header Styling*/
+header {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 1% auto;
+}
+    header > h1 {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box; 
+        margin: 0.5% auto;       
+    }
+    header > h1 > sup {
+       margin: 1%;     
+    }
+
+#github_profile img {
+    width: 15%;
+    float: right;
+    border-radius: 25%;
+    margin: -10% 1% 1% 7%;
+}   
+
 /*Navbar Styling*/
+
 #nav_wrapper {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     position: fixed;
     display: inline;
-    margin: 8% 1% 10% -5%;
+    margin: 4% 1% 10% -5%;
     padding: 1%;
     opacity: 0.5;
     border-bottom-right-radius: 20%;
@@ -148,8 +171,9 @@ p, li {
     display: inline-block;
 }
 
-/*Footer*/
+/* Footer */
 
+/*Overall Styling - Footer*/
 footer {
     position: relative;
     width: 100%;
@@ -235,6 +259,7 @@ footer hr {
 #copyright {
     text-align: center;
 }
+
 /* Restricted Styling - 800px max Screen*/
 @media only screen and (max-width: 800px) {
     
@@ -276,6 +301,8 @@ footer hr {
         line-height: normal;
     }
 
+    /* Navbar */
+
     /*Responsive (<800px) - Navbar Styling*/
     #restricted_nav { /* <800px */
         display: inline-block;
@@ -301,7 +328,9 @@ footer hr {
         margin-top: 50%;
     }
 
-    /*Responsive Styling (<800px) - Footer*/
+    /* Footer */
+
+    /*Responsive (<800px) - Footer Styling*/
     footer {
         position: relative;
         width: 100%;
@@ -389,6 +418,7 @@ footer hr {
 
 /* Restricted Styling - 500px max Screen*/
 @media only screen and (max-width: 500px) {
+    
     /*Responsive (<500px) - General Styling*/
     h1 {
         font-size: 1.3em;
@@ -416,7 +446,14 @@ footer hr {
         line-height: normal;
     }
 
-    /*Responsive (<500px) Navbar Styling*/
+    /*Responsive (<500px) - Shared View/Layout*/
+
+    /* Header */
+    #github_profile {
+        display: none;
+    }
+
+    /* Navbar */
     #restricted_nav { /* <500px */
         display: inline-block;
     }
@@ -436,7 +473,7 @@ footer hr {
         min-height: 30px;
     }
 
-    /* Responsive(<500px) - Footer Styling */
+    /* Footer */
 
     /*Responsive Styling (<500px) - Left to Middle of Footer*/
     #footer_contact_details {

@@ -100,6 +100,7 @@
     <Content Include="Views\Resume\Index.cshtml" />
     <Content Include="Views\About\Index.cshtml" />
     <Content Include="Scripts\JSSFile.js" />
+    <Content Include="Images\imgGithubProfile.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\favicon.ico" />
