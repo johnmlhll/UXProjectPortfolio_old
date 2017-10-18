@@ -101,6 +101,12 @@
     <Content Include="Views\About\Index.cshtml" />
     <Content Include="Scripts\JSSFile.js" />
     <Content Include="Images\imgGithubProfile.png" />
+    <Content Include="Images\imgLogoASPNETMVC.jpg" />
+    <Content Include="Images\imgLogoASPRazor.png" />
+    <Content Include="Images\imgLogoAzure.png" />
+    <Content Include="Images\imgLogoCSharpVS.jpg" />
+    <Content Include="Images\imgLogoHtml5Css3Js.png" />
+    <Content Include="Images\imgLogoXML.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\favicon.ico" />

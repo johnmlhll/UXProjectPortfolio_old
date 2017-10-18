@@ -1,6 +1,8 @@
 ﻿/**External Javascript File for Responsively Designed - Project Portfolio */
 /**
- * Function 1/2 - Function to open and close the menu bar whilst in full screen mode 
+ * Function 1 - openNav() Function to open the menu bar whilst in full screen or responsive mode 
+ * Function 2 - closeNav() Function to close the menu bar whilst in full screen mode or responsive mode
+ * Function 3 - Listener function is a btn_expand class event listener for click events to expand project details 
  * Dev note: work around due to getElementById bug in ASP.NET core. seems to note like overloaded function
  */
  function openNav() {
@@ -15,7 +17,6 @@
     document.getElementById("unrestricted_nav").style.height = "auto";
  }
 
-
 function closeNav() {
     document.getElementById("nav_wrapper").style.width = "6%";
     document.getElementById("nav_wrapper").style.height = "13%";
@@ -23,3 +24,10 @@ function closeNav() {
     document.getElementById("nav").style.display = "none";
     document.getElementById("navbar_tab").style.display = "inline";
  }
+
+$(document).ready(function slider() {
+    $(".portfolio_entry_detail").hide();
+    $(".btn_expand").click(function() {
+        $(this).next("div").slideToggle(500); 
+    });
+});

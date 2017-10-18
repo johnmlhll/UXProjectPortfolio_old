@@ -53,6 +53,26 @@ p, li {
     text-align: left;
 }
 
+img {
+    border-radius: 10%;
+}
+
+a {
+    font-weight: bold;
+}
+
+    a:hover {
+        color: #2eb82e;
+        font-weight: lighter;
+        text-decoration: none;
+    }
+
+iframe {
+    width: 49%;
+    margin: 1% 25% 1% 25%;
+    resize: both;
+}
+
 /*Error View Styling*/
 #error_view {
     color: red;
@@ -81,7 +101,8 @@ header {
     width: 15%;
     float: right;
     border-radius: 25%;
-    margin: -10% 1% 1% 7%;
+    margin: -10% 2% 1% 8%;
+    padding: 1%;
 }   
 
 /*Navbar Styling*/
@@ -91,12 +112,10 @@ header {
     -webkit-box-sizing: border-box;
     position: fixed;
     display: inline;
-    margin: 4% 1% 10% -5%;
+    margin: 7% 1% 10% -5%;
     padding: 1%;
     opacity: 0.5;
-    border-bottom-right-radius: 20%;
-    border-bottom-left-radius: 20%;
-    border-top-right-radius: 20%;
+    border-radius: 20%;
     background: -webkit-linear-gradient(#f9fcfc, #a2d6d6);
     background: -o-linear-gradient(#f9fcfc, #a2d6d6);
     background: -moz-linear-gradient(#f9fcfc, #a2d6d6);
@@ -110,7 +129,7 @@ header {
     #navbar_tab h3 {
         color: #0d0d0d;
         transform: rotate(90deg);
-        margin-top: 40%;
+        margin-top: 38%;
     }
 
 
@@ -130,7 +149,7 @@ header {
     }
 
         #nav ul li {
-            margin: 1% 1% 5% 1%;
+            margin: 3% 1% 5% 1%;
             padding-bottom:1%;
             border: 2px outset;
             border-radius: 10%;
@@ -149,7 +168,7 @@ header {
                 resize: both;
             }
 
-#btn_close {
+.btn_close {
     display: inline;
     text-decoration: none;
     color: #0d0d0d;
@@ -158,7 +177,7 @@ header {
     resize: both;
 }
     #nav ul li a:hover,
-    #btn_close:hover {
+    .btn_close:hover {
         font-weight: bold;
         color: #ffffff;
     }
@@ -213,13 +232,13 @@ footer hr {
 
 /*Middle of Footer*/
 #footer_contact_details {
-    box-sizing: content-box;
-    -webkit-box-sizing: content-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     position:relative;
     list-style-type: none;
     font-weight: normal;
     text-align: center;
-    margin: -5% 4% 0 40%;
+    margin: -5% 4% 0 34%;
     }
 
     #footer_contact_details li a {
@@ -237,13 +256,14 @@ footer hr {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     float: right;
-    width: 18%;
-    margin: -12% 2% 2% 3%;
+    width: 16%;
+    margin: -14% 7% 2% 17%;
+    padding: 0.5%;
 }
 
 #footer_shares_twitter { /*also Styles Facebook share button*/
     list-style-type: none;
-    padding-bottom: 1%;
+    padding: 1%;
     display: block;
 }
 
@@ -260,9 +280,54 @@ footer hr {
     text-align: center;
 }
 
+/*Home Page - View Styling*/
+
+#home_view {
+    width: 100%;
+}
+
+#welcome {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+#img_john {
+    float: right;
+    margin: 2% auto;
+}
+
+#software_portfolio {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.portfolio_entry {
+    margin: 1% auto;
+    text-align: left;
+}
+
+.portfolio_entry_detail {
+    display: none;
+}
+
+.project_date {
+    float: right;
+}
+
+.portfolio_images {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 15%;
+    resize: both
+}
+    .portfolio_images img {
+        margin-right: 2%;
+        padding: 0.5%;
+    }
+
+
 /* Restricted Styling - 800px max Screen*/
 @media only screen and (max-width: 800px) {
-    
     /*Responsive (<800px) - General Styling*/
     body {
         background-image: none;
@@ -272,7 +337,7 @@ footer hr {
         width: 100%;
         padding: 0.5%;
         border-radius: 0;
-        margin: 1% auto;
+        margin: 0 auto;
     }
 
     h1 {
@@ -301,6 +366,12 @@ footer hr {
         line-height: normal;
     }
 
+    iframe {
+        width: 89%;
+        margin: 1% 5% 1% 5%;
+        resize: both;
+    }
+
     /* Navbar */
 
     /*Responsive (<800px) - Navbar Styling*/
@@ -317,7 +388,7 @@ footer hr {
         box-sizing: border-box;
         -webkit-box-sizing: border-box;
         position: fixed;
-        margin: 7% 1% 10% 0;
+        margin: 7% 0 10% 0;
         position: fixed;
         min-width: 60px;
         min-height: 30px;
@@ -390,7 +461,7 @@ footer hr {
         -webkit-box-sizing: border-box;
         clear: both;
         width: 60%;
-        margin: 0 8% 0 8%;
+        margin: 0 5% 0 5%;
     }
 
     #footer_shares_twitter { /*also Styles Facebook share button*/
@@ -476,14 +547,14 @@ footer hr {
     /* Footer */
 
     /*Responsive Styling (<500px) - Left to Middle of Footer*/
+
     #footer_contact_details {
         box-sizing: content-box;
         -webkit-box-sizing: content-box;
         position: relative;
         list-style-type: none;
         font-weight: normal;
-        text-align: center;
-        margin: 0.5% 1% 1% 1%;
+        margin: 0.5% -5% 1% 0;
         width: 100%;
     }
 
@@ -512,7 +583,7 @@ footer hr {
         list-style-type: none;
         clear: both;
         width: 60%;
-        margin: -16% 10% 0 70%;
+        margin: -19% 0% 0 75%;
         position: relative;
     }
 

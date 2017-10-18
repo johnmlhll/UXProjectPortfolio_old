@@ -2,26 +2,155 @@
     ViewBag.Title = "Home";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<div id="welcome">
-<h2>Welcome to ASP.NET MVC @ViewData["Version"] on @ViewData["Runtime"]!</h2>
-    <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et enim finibus, fringilla tortor vitae, aliquam leo.
-    </p>
-</div>
-<div id="software_portfolio">
-<h2>Welcome to ASP.NET MVC @ViewData["Version"] on @ViewData["Runtime"]!</h2>
-
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/8Gn8VkOoQiY" frameborder="0" allowfullscreen></iframe>
+<div id="home_view">
+    <article id="welcome">
+        <h2>Home</h2>
+        <p>
+            A hearty welcome to my software portfolio application built on ASP.NET Core MVC @ViewData["Version"] on @ViewData["Runtime"] running 
+			on Debs (a.k.a. My Macbook Pro 2012)! Production deployment was done on Azure and Github of course was used for Version Control.
+			This application goes hand in hand with source code found on my Github profile, which is detailed in the icon
+			above and also in the below portfolio by project. Also, please feel free to connect with me on 
+			<a href="https://www.linkedin.com/in/johnmlhll/" target="_blank">Linkedin</a>, 
+			<a href="https://twitter.com/johnmlhll" target="_blank">Twitter</a>, 
+			<a href="https://plus.google.com/u/0/+JohnMulhallProfile" target="_blank">Google+</a> and 
+			<a href="https://github.com/johnmlhll" target="_blank">Github</a>.
+        </p>
+		<a id="img_john"><img src="~/Images/imgJohnMulhall.jpg" alt="Image of John Mulhall"></a>
+		<p>
+			Whilst this application is mainly dedicated to my software portfolio bringing you details of my personal software projects along with 
+			summary detail only of my commercial software projects, you can also find the following by clicking on the menu icon to the left of 
+			this page.
+		</p>	
+	    <ul>
+			<li>
+		        @Html.ActionLink("Home","Index","Home") Page - Brings you home to this page and my software portfolio 
+                beneath
+		    </li>
+			<li>
+			    @Html.ActionLink("About","Index","About") Page - Brings you a short bio about myself, qualifications, 
+			    experience summary, interests, etc
+			</li>
+		    <li>
+			    @Html.ActionLink("Resume","Index","Resume") Page - Brings you a short form version of my Curriculum Vitae 
+			    in Resume format
+			</li>
+		    <li>
+			   @Html.ActionLink("Irish Tech News","Index","IrishTechNews") Page - Brings you background to my writing 
+			   experience and my publications with <a href="http://irishtechnews.ie/" target="_blank">Irish Tech News</a>
+			</li>
+			<li>
+			   @Html.ActionLink("Contact","Index","Contact") Page - Brings you an online contact form plus the best email 
+			    addresses, phone numbers and social media profiles to connect with my goodself!
+			</li>
+		</ul>
+    </article>
+    <article id="software_portfolio">
+        <h2>The Software Portfolio</h2>
+        <p>
+            Although, I started to code in September 2014 for the first time in earnest, the Software Development set out below is based 
+			upon completed projects of note from September 2016 when I started the Higher Diploma in Science in Computing 
+			(Software Development) at <a href="http://www.dbs.ie/courses/ict-skills-programme" target="_blank">Dublin Business School</a>. 
+			Selected projects completed on the course along with those of note completed in my spare time then and since make up the 
+			bulk of my software portfolio. Please note certain Projects on my Github profile that predate the portfolio start date of 
+			September 2016 will not be included in my software portfolio. I have implemented a JavaScript toggle function to make
+			purusal of my software portfolio more user friendly, so just click on any of the project entries to see the details 
+			associated with the entry.
+		</p>
 	
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et enim finibus, fringilla tortor vitae, aliquam leo. Nulla tristique lorem ac mi vulputate euismod egestas hendrerit nibh. Morbi faucibus sapien ut erat scelerisque fringilla. Phasellus quis dui a diam gravida maximus. Aenean posuere ante dolor, vel placerat justo aliquam a. Sed tristique malesuada lectus, eget blandit diam tempus nec. Aliquam sed quam quis ligula accumsan molestie tincidunt id massa. Nulla eget est a metus blandit interdum sed id enim. Curabitur eu ligula est. Nulla facilisi. Sed sed vestibulum neque.
+        <!--Portfolio Entry 01 - Project Portfolio-->
+        <div class="portfolio_entry">
+            <hr/>   
+            <p>
+                <strong>Project Name:</strong> Project Portfolio
+                <span class="project_date">Publication Date: October 2017</span>
+            </p>
+            <a class="btn_expand">Show More/Less...</a>
+                   
+    		<div class="portfolio_entry_detail">	
+    		<p>Languages:</p>	
+    		<a class="portfolio_images">
+    			<img src="~/Images/imgLogoHtml5Css3Js.png" alt="Image of HTML5, CSS3 and JavaScript Logos"/>
+    			<img src="~/Images/imgLogoCSharpVS.jpg" alt="Image of C# and Visual Studio Logos"/>	
+    			<img src="~/Images/imgLogoASPRazor.png" alt="Image of ASP.NET Razor Logo"/>	
+    			<img src="~/Images/imgLogoXML.png" alt="Image of XML Logo"/>	
+    		</a>	
+    		<p>Frameworks:</p>
+    		 <a class="portfolio_images">
+                <img src="~/Images/imgLogoASPNETMVC.jpg" alt="Image of Microsoft ASP.NET MVC Logo"/>
+            </a>	
+    		 <p>Deployment:</p>
+             <a class="portfolio_images">
+                <img src="~/Images/imgLogoAzure.png" alt="Image of Microsoft Azure Logo"/>
+            </a>	
+    		<p>Project Trailer:</p>  
+                <p>Production Pending</p>
 
-        Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam arcu purus, sagittis sit amet viverra id, sodales sit amet mauris. Nam lacinia elit vitae tellus aliquam, in placerat ipsum scelerisque. Maecenas sed diam velit. Donec eleifend, ligula nec fermentum cursus, massa tortor porttitor tortor, eu pretium purus ipsum vitae purus. Fusce sollicitudin dictum sodales. Vivamus metus dui, feugiat a consectetur in, cursus nec leo. Nunc rhoncus viverra mauris sit amet euismod.
+    		<p>Project Description:</p>	
+    		<p>
+                This project is build on an ASP.NET Core framework and is designed to showcase John's software portfolio from
+    		    September 2016 onwards. The site is dedicated to the showcasing of his software projects along with his 
+    			background, resume, writing portfolio with Irish Tech News and also a contact form. The application is
+                written on a ASP.NET core stack in C sharp with a native XML database to store contact form information. 
+    			The front end is crafted using Razor, HTML5, CSS3 and Javascript. The purpose is to give you a good UX experience
+                in checking out John's software project and finding out more about him through the site and its social media/contact
+    			links/details.
+    		</p>
+    		<p>Project Demonstration:</p>   
+    			<p>Production Pending</p>
+				<p>Github Repository: <a href="https://github.com/johnmlhll/ProjectPortfolio" target="_blank">Project Portfolio</a></p> 
+    		</div>	
+       </div>
 
-        Quisque varius a tellus eget aliquet. Praesent neque lorem, pulvinar id fermentum id, sodales ac urna. Vivamus ullamcorper libero sed nunc viverra imperdiet. Phasellus nec tincidunt leo. Ut scelerisque lorem elit, a maximus tortor ullamcorper a. Pellentesque vel commodo tortor, sed vulputate est. Sed in odio tellus. Aenean euismod lacus eu fermentum efficitur. Nam pellentesque elit nisi, vel consequat mauris ornare ac. Phasellus non rhoncus magna. Suspendisse iaculis risus eget porta egestas.
+		<!--Portfolio Entry 02 - MulderbertPX-->
+        <div class="portfolio_entry">
+            <hr/>   
+            <p>
+                <strong>Project Name:</strong> MulderbertPX
+                <span class="project_date">Publication Date: October 2017</span>
+            </p>
+            <a class="btn_expand">Show More/Less...</a>
+                   
+            <div class="portfolio_entry_detail">    
+            <p>Languages:</p>   
+            <a class="portfolio_images">
+                <img src="~/Images/imgLogoHtml5Css3Js.png" alt="Image of HTML5, CSS3 and JavaScript Logos"/>
+                <img src="~/Images/imgLogoCSharpVS.jpg" alt="Image of C# and Visual Studio Logos"/> 
+                <img src="~/Images/imgLogoASPRazor.png" alt="Image of ASP.NET Razor Logo"/> 
+                <img src="~/Images/imgLogoXML.png" alt="Image of XML Logo"/>    
+            </a>    
+            <p>Frameworks:</p>
+             <a class="portfolio_images">
+                <img src="~/Images/imgLogoASPNETMVC.jpg" alt="Image of Microsoft ASP.NET MVC Logo"/>
+				<img src="~/Images/imgLogoMicrosoftSQLServer.png" alt="Image of SQL Server Logo"/>	
+            </a>    
+             <p>Deployment:</p>
+             <a class="portfolio_images">
+                <img src="~/Images/imgLogoAzure.png" alt="Image of Microsoft Azure Logo"/>
+					
+            </a>    
+            <p>Project Trailer:</p>  
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-R5FL4Z5FFM" frameborder="0" allowfullscreen=true></iframe>
 
-        Curabitur et nulla sagittis, auctor dolor nec, consectetur arcu. Fusce volutpat egestas turpis eget ultricies. Nullam eu consectetur tellus. Quisque efficitur elit eget imperdiet tempus. Etiam nec semper dui, sit amet venenatis eros. Ut ut scelerisque odio, vel suscipit erat. Sed placerat quis felis a cursus. Sed ut rutrum neque. Nullam arcu orci, aliquam ut nibh vitae, rhoncus congue enim. Nam elit ante, imperdiet ut pulvinar at, ornare in sem.
-
-        Ut lorem velit, sodales at elementum ac, venenatis commodo lectus. Praesent quis nisl ipsum. Nulla gravida ac risus quis lobortis. Quisque lacus leo, mattis eu elit eu, dapibus tristique leo. Vivamus interdum facilisis nisl, eget dictum nulla finibus sed. Praesent ultricies, nulla vel porttitor malesuada, turpis nunc ullamcorper ipsum, id ultricies urna dolor in odio. Fusce et mi id libero euismod euismod. Cras pulvinar libero vel sem auctor, id ornare quam suscipit. Maecenas vulputate semper magna vel mollis. Sed auctor, sapien in pellentesque tincidunt, ligula sapien elementum dui, eu dictum felis quam quis arcu. Morbi sit amet metus et felis convallis interdum sit amet sit amet leo. Mauris in tincidunt sem, ac pharetra tortor. Suspendisse potenti. Etiam non magna non tortor facilisis varius ultrices in tellus.
-	</p>
+            <p>Project Description:</p> 
+            <p>
+                This project is build on an ASP.NET (native) framework and is designed to showcase a version 2.0 of a college project
+				that was done in v1.0 as a group project. Niall Colbert, Diarmiud Dermody and John made up the V1.0 team. 
+				The site is dedicated to the showcasing of a minimum viable product for a newly digitised (fictitious) Fridge company 
+				called Mulderbert & Co, whom are an established bricks and motor company moving into the digital space. The application 
+				is written on a ASP.NET stack in C sharp with a native XML database for contacts us information along with SQL server for 
+				customer and transactional information. The relational Database instance is designed and developed to 3rd normal form
+                ensuring good quality data persistence for core data generated by the site. The front end is crafted using Razor, 
+				HTML5, CSS3 and Javascript. The purpose is to give you a good overview of John's technical and design ability in a 
+				prior designed and built application, which he re-engineered to a smaller cost footprint yet maintaining data retention to 
+                a good standard for deployment on Azure.
+            </p>
+            <p>Project Demonstration:</p>   
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8Gn8VkOoQiY" frameborder="0" allowfullscreen=true></iframe>
+			<p>Github Repository: <a href="https://github.com/johnmlhll/CSharp-MulderbertPX" target="_blank">MulderbertPX</a></p> 	
+            </div>  
+       </div>
+		
+    </article>		
 </div>
+
+	
