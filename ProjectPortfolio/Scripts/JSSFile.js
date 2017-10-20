@@ -7,7 +7,7 @@
  */
  function openNav() {
     document.getElementById("nav_wrapper").style.opacity = "1";
-    document.getElementById("nav_wrapper").style.width = "27%";
+    document.getElementById("nav_wrapper").style.width = "22%";
     document.getElementById("nav_wrapper").style.height = "auto";
     document.getElementById("navbar_tab").style.display = "none";
     document.getElementById("nav").style.display = "inline";

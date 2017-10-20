@@ -17,7 +17,7 @@ body {
     margin: 1% auto;
     width: 93%;
     padding: 2% 1% 2% 5%;
-    border-radius: 7%;
+    border-radius: 3%;
     position: relative;
     background: -webkit-linear-gradient(#f9fcfc, #a2d6d6);
     background: -o-linear-gradient(#f9fcfc, #a2d6d6);
@@ -112,10 +112,10 @@ header {
     -webkit-box-sizing: border-box;
     position: fixed;
     display: inline;
-    margin: 7% 1% 10% -5%;
+    margin:3% 1% 35% -5%;
     padding: 1%;
     opacity: 0.5;
-    border-radius: 20%;
+    border-radius: 0 15% 15% 15%;
     background: -webkit-linear-gradient(#f9fcfc, #a2d6d6);
     background: -o-linear-gradient(#f9fcfc, #a2d6d6);
     background: -moz-linear-gradient(#f9fcfc, #a2d6d6);
@@ -152,7 +152,7 @@ header {
             margin: 3% 1% 5% 1%;
             padding-bottom:1%;
             border: 2px outset;
-            border-radius: 10%;
+            border-radius: 5%;
         }
             #nav ul li a {
                 display: inline;
@@ -306,11 +306,20 @@ footer hr {
     text-align: left;
 }
 
+    .portfolio_entry hr {
+        margin-top: 3%;
+        width: 90%;
+    }
+
+    .portfolio_entry p {
+       margin-bottom: 2%;     
+    }
+
 .portfolio_entry_detail {
     display: none;
 }
 
-.project_date {
+.project_right { /*sets date and hyperlinks to right hand side of view*/
     float: right;
 }
 
@@ -325,21 +334,36 @@ footer hr {
         padding: 0.5%;
     }
 
+.btn_expand {
+    padding: 0.5%;
+    border-style: ridge;
+    border-radius: 10%;
+    background-color: #f9fcfc;
+    margin: 1%;
+}
+
+.entry_urls {
+    width: 100%;
+    position: relative;
+    margin: 1% 30% 1% 30%;
+    display: block;
+}
 
 /* Restricted Styling - 800px max Screen*/
 @media only screen and (max-width: 800px) {
     /*Responsive (<800px) - General Styling*/
     body {
         background-image: none;
+        padding: 0;
     }
 
     #wrapper {
         width: 100%;
-        padding: 0.5%;
+        padding: 0;
         border-radius: 0;
         margin: 0 auto;
     }
-
+  
     h1 {
         font-size: 1.4em;
         font-weight: bold;
@@ -372,9 +396,27 @@ footer hr {
         resize: both;
     }
 
+    /*Responsive (<800px) - Header Styling*/
+
+    #github_profile img {
+        width: 14%;
+        clear: both;
+        border-radius: 25%;
+        margin: 0.5% 42% 1% 42%;
+        padding: 1%;
+    }  
+
     /* Navbar */
 
     /*Responsive (<800px) - Navbar Styling*/
+    #navbar_tab {
+        display: inline-block;
+    }
+
+        #navbar_tab h3 {
+            margin-top: 36%;
+        }
+
     #restricted_nav { /* <800px */
         display: inline-block;
     }
@@ -388,15 +430,28 @@ footer hr {
         box-sizing: border-box;
         -webkit-box-sizing: border-box;
         position: fixed;
-        margin: 7% 0 10% 0;
+        margin: 3% 0 35% 0;
+        padding: 0.5%;
         position: fixed;
-        min-width: 60px;
+        min-width: 50px;
         min-height: 30px;
     }
 
     #navbar_tab h3 {
-        transform:rotate(90deg);
+        transform: rotate(90deg);
         margin-top: 50%;
+        font-size: 1.1em;
+    }
+
+    #nav ul li {
+        margin: 3% 1% 5% 1%;
+        padding-bottom: 1%;
+        border: 2px outset;
+        border-radius: 9%;
+    }
+
+    #navbar_tab {
+        display: inline-block;
     }
 
     /* Footer */
@@ -412,7 +467,7 @@ footer hr {
 
         footer hr {
             width: 90%;
-            margin: 0 auto;
+            margin-top: 2%;
         }
 
     /*Responsive Styling (<800px) - Top of Footer*/
@@ -485,6 +540,26 @@ footer hr {
         margin: 1% 40% 1% 40%;
         text-align: left;
     }
+
+    /*Responsive (<800px) - Home View Styling*/
+    .entry_urls {
+        width: 100%;
+        position: relative;
+        margin: 1% 10% 1% 10%;
+        display: block;
+    }
+
+    .portfolio_images {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+
+        .portfolio_images img {
+            width: 30%;
+            resize: both;
+            padding: 0.5%;
+            margin-right: 1% auto;
+        }
 }
 
 /* Restricted Styling - 500px max Screen*/
@@ -525,12 +600,8 @@ footer hr {
     }
 
     /* Navbar */
-    #restricted_nav { /* <500px */
-        display: inline-block;
-    }
-
-    #unrestricted_nav { /* >500px */
-        display: none;
+    #navbar_tab h3 {
+        transform: rotate(90deg);
     }
 
     #nav_wrapper {
@@ -538,16 +609,39 @@ footer hr {
         box-sizing: border-box;
         -webkit-box-sizing: border-box;
         position: fixed;
-        margin: 7% 1% 10% 0;
+        margin: 3% 0 35% 0;
         position: fixed;
-        min-width: 60px;
+        min-width: 90px;
         min-height: 30px;
+    }
+
+    #restricted_nav { /* <500px */
+        display: inline-block;
+        }
+
+        #restricted_nav ul li {
+           box-sizing: border-box;
+           -webkit-box-sizing: border-box;
+           min-width: 80px; 
+        }
+        #restricted_nav ul li a {
+           padding: 1%;
+        }
+
+    #unrestricted_nav { /* >500px */
+        display: none;
+    }
+
+    #nav ul li {
+        margin: 3% 1% 5% 1%;
+        padding-bottom: 1%;
+        border: 2px outset;
+        border-radius: 15%;
     }
 
     /* Footer */
 
     /*Responsive Styling (<500px) - Left to Middle of Footer*/
-
     #footer_contact_details {
         box-sizing: content-box;
         -webkit-box-sizing: content-box;
@@ -592,4 +686,18 @@ footer hr {
             border: ridge;
             border-color: lightgray;
         }
+
+    /*Responsive (<500px) - Home View Styling*/
+    .portfolio_entry {
+        margin: 1% auto;
+        text-align: left;
+    }
+
+        .portfolio_entry p {
+            display: block;
+        }
+    .btn_expand {
+        font-size: 0.6em;
+        resize: both;    
+    }
 }
