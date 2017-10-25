@@ -112,10 +112,10 @@ header {
     -webkit-box-sizing: border-box;
     position: fixed;
     display: inline;
-    margin:3% 1% 35% -5%;
+    margin:6% 1% 35% -5%;
     padding: 1%;
     opacity: 0.5;
-    border-radius: 0 15% 15% 15%;
+    border-radius: 15%;
     background: -webkit-linear-gradient(#f9fcfc, #a2d6d6);
     background: -o-linear-gradient(#f9fcfc, #a2d6d6);
     background: -moz-linear-gradient(#f9fcfc, #a2d6d6);
@@ -191,8 +191,18 @@ header {
 }
 
 /* Footer */
-
 /*Overall Styling - Footer*/
+#back_to_top { /*Button styling for going back to the top of the view*/
+    position: fixed;
+    bottom: 3%;
+    margin: 0 10% 0 78.5%;
+    opacity: 0.7;
+}
+
+    #back_to_top:hover {
+        opacity: 1;
+    }
+
 footer {
     position: relative;
     width: 100%;
@@ -470,6 +480,11 @@ footer hr {
             margin-top: 2%;
         }
 
+    #back_to_top img { /*button to go back to top*/
+        width: 80%;
+        margin: 0 10% 0 88.5%;
+    }
+       
     /*Responsive Styling (<800px) - Top of Footer*/
     #logo {
         align-content: center;
@@ -696,8 +711,16 @@ footer hr {
         .portfolio_entry p {
             display: block;
         }
+
     .btn_expand {
         font-size: 0.6em;
         resize: both;    
+    }
+
+    .entry_urls {
+        width: 100%;
+        position: relative;
+        margin: 0.5%;
+        display: block;
     }
 }

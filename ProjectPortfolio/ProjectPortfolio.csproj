@@ -107,9 +107,28 @@
     <Content Include="Images\imgLogoCSharpVS.jpg" />
     <Content Include="Images\imgLogoHtml5Css3Js.png" />
     <Content Include="Images\imgLogoXML.png" />
+    <Content Include="Images\imgBackToTop.png" />
+    <Content Include="Images\imgJohnMulhall.jpg" />
+    <Content Include="Images\imgLogoAndroid.png" />
+    <Content Include="Images\imgLogoAngular4TS.png" />
+    <Content Include="Images\imgLogoBash.png" />
+    <Content Include="Images\imgLogoCentOS.png" />
+    <Content Include="Images\imgLogoDesktop.png" />
+    <Content Include="Images\imgLogoDotNet.png" />
+    <Content Include="Images\imgLogoFirebase.jpg" />
+    <Content Include="Images\imgLogoGithubPages.png" />
+    <Content Include="Images\imgLogoHtml5Css3.png" />
+    <Content Include="Images\imgLogoJava8.png" />
+    <Content Include="Images\imgLogoJavaSwing.png" />
+    <Content Include="Images\imgLogoLinux.png" />
+    <Content Include="Images\imgLogoMicrosoftSQLServer.png" />
+    <Content Include="Images\imgLogoMySQL.png" />
+    <Content Include="Images\imgLogoPostgreSQL.png" />
+    <Content Include="Images\imgLogoTypeScript.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\favicon.ico" />
+    <None Include="Images\.DS_Store" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
