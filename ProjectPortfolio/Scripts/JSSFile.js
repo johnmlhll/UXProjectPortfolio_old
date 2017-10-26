@@ -37,7 +37,7 @@ $(document).ready(function slider() {
 $(document).ready(function() {
     $("#back_to_top").hide();
     $(window).scroll(function() {
-        if($(window).scrollTop() > 200){
+        if($(window).scrollTop() >= 200){
             $('#back_to_top').fadeIn();
         } else {
             $('#back_to_top').fadeOut();

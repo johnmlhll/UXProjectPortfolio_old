@@ -557,6 +557,12 @@ footer hr {
     }
 
     /*Responsive (<800px) - Home View Styling*/
+    #img_john img {
+        width: 100%;
+        resize: both;
+        min-width: 20%;
+    }
+
     .entry_urls {
         width: 100%;
         position: relative;
@@ -607,6 +613,10 @@ footer hr {
         line-height: normal;
     }
 
+    #wrapper {
+        margin: 0.5%;        
+    }
+
     /*Responsive (<500px) - Shared View/Layout*/
 
     /* Header */
@@ -655,7 +665,9 @@ footer hr {
     }
 
     /* Footer */
-
+    #back_to_top img {
+        display: none;
+    }
     /*Responsive Styling (<500px) - Left to Middle of Footer*/
     #footer_contact_details {
         box-sizing: content-box;
