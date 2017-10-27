@@ -194,8 +194,8 @@ header {
 /*Overall Styling - Footer*/
 #back_to_top { /*Button styling for going back to the top of the view*/
     position: fixed;
-    bottom: 3%;
-    margin: 0 10% 0 78.5%;
+    bottom: 20%;
+    margin: 0 10% 0 78%;
     opacity: 0.7;
 }
 
@@ -204,7 +204,6 @@ header {
     }
 
 footer {
-    position: relative;
     width: 100%;
 }
 footer hr {
@@ -359,6 +358,16 @@ footer hr {
     display: block;
 }
 
+/*About John - View Styling*/
+#dbs_john {
+    margin: 1%;
+}
+
+    #dbs_john a img {
+        float: right;
+        width: 35%;
+    }
+
 /* Restricted Styling - 800px max Screen*/
 @media only screen and (max-width: 800px) {
     /*Responsive (<800px) - General Styling*/
@@ -476,13 +485,13 @@ footer hr {
     }
 
         footer hr {
-            width: 90%;
             margin-top: 2%;
         }
 
     #back_to_top img { /*button to go back to top*/
+        margin: 0 10% 0 78%;
         width: 80%;
-        margin: 0 10% 0 88.5%;
+        bottom: 65%;
     }
        
     /*Responsive Styling (<800px) - Top of Footer*/
