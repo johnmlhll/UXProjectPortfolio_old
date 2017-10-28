@@ -359,14 +359,25 @@ footer hr {
 }
 
 /*About John - View Styling Unrestricted*/
-#dbs_john {
+#dbs_john, #soldier_john {
     margin: 1%;
 }
+
+    #soldier_john a img {
+        width: 35%;
+        margin: 1% 30% 1% 30%;
+    }
 
     #dbs_john a img {
         float: right;
         width: 35%;
     }
+
+#interests {
+    list-style-type: none;
+    text-align: center;
+    font-style: oblique;
+}
 
 /* Restricted Styling - 800px max Screen*/
 @media only screen and (max-width: 800px) {
