@@ -73,6 +73,11 @@ iframe {
     resize: both;
 }
 
+.hr_class {
+    margin: 2% auto;
+    width: 90%;
+}
+
 /*Error View Styling*/
 #error_view {
     color: red;
@@ -349,6 +354,7 @@ footer hr {
     border-radius: 10%;
     background-color: #f9fcfc;
     margin: 1%;
+    resize: both;
 }
 
 .entry_urls {
@@ -378,6 +384,16 @@ footer hr {
     text-align: center;
     font-style: oblique;
 }
+
+/*Resume - View Styling Unrestricted*/
+#resume_wrapper {
+    width: 100%;
+    resize:both;
+}
+
+    #resume_wrapper p {
+       padding: 2%;
+    }
 
 /* Restricted Styling - 800px max Screen*/
 @media only screen and (max-width: 800px) {
