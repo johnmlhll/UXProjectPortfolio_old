@@ -5,6 +5,8 @@
  * Function 3 - slider() Listener function is a btn_expand class event listener for click events to expand project details 
  * Function 4 - JQuery / JavaScript function to allow auto scroll back to top of view
  * Function 5 - scrollUp() Scroll back to top of page when clicked
+ * Function 6 - swapImage(id, path) Swaps Image out from list supplied as an argument
+ * Function 7 -loadImages() Loads up images for slideshows on view
  * Dev note: work around due to getElementById bug in ASP.NET core. seems to note like overloaded function
  */
  function openNav() {
@@ -49,3 +51,42 @@ function scrollUp() {
     window.scrollTo(5,5);
 }
 
+function swapImage(id, imageList) {
+    var htmlSlideshowId = document.getElementById(id);
+    htmlSlideshowId.count = (htmlSlideshowId.count < 3) ? htmlSlideshowId.count : 0;
+    htmlSlideshowId.src = imageList[htmlSlideshowId.count];
+    htmlSlideshowId.count = (htmlSlideshowId.count + 1); imageList.length;
+}
+
+
+function loadImages() {
+    setInterval(function() {
+        swapImage('slideshow_csharp', [
+            "~/Images/imgLogoCSharpVS.jpg",
+            "~/Images/imgLogoMicrosoftSQLServer.png",
+            "~/Images/imgLogoJava8.png"
+        ]);
+        swapImage('slideshow_bash', [
+            "~/Images/imgLogoBash.png",
+            "~/Images/imgLogoDotNet.png",
+            "~/Images/imgLogoPostgreSQL.png"
+        ]);
+        swapImage('slideshow_xml', [
+            "~/Images/imgLogoXML.png",
+            "~/Images/imgLogoASPNETMVC.jpg",
+            "~/Images/imgLogoHtml5Css3Js.png" 
+        ]);
+        swapImage('slideshow_android', [
+            "~/Images/imgLogoAndroid.png",
+            "~/Images/imgLogoAngular4TS.png",
+            "~/Images/imgLogoMySQL.png"    
+        ]);
+        swapImage('slideshow_python', [
+            "~/Images/imgLogoPython.png",
+            "~/Images/imgLogoLinux.png",
+            "~/Images/imgLogoFirebase.jpg"
+        ]);
+    }, 3000);
+
+}
+onload = loadImages;

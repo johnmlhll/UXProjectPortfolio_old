@@ -126,6 +126,7 @@
     <Content Include="Images\imgLogoPostgreSQL.png" />
     <Content Include="Images\imgLogoTypeScript.png" />
     <Content Include="Images\imgMeGrad94.png" />
+    <Content Include="Images\imgLogoPython.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\favicon.ico" />

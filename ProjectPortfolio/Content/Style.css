@@ -111,7 +111,6 @@ header {
 }   
 
 /*Navbar Styling*/
-
 #nav_wrapper {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -395,10 +394,22 @@ footer hr {
        padding: 2%;
     }
 
+#language_slideshow {
+    width: 95%;
+    margin: 0 4% 0 4%;
+}
+
+    #language_slideshow img {
+        width: 18%;
+        resize: both;
+        padding: 0.2%;
+    }
+   
+
 /* Restricted Styling - 800px max Screen*/
 @media only screen and (max-width: 800px) {
     /*Responsive (<800px) - General Styling*/
-    body {
+    body; {
         background-image: none;
         padding: 0;
     }
