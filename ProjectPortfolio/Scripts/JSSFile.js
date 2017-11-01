@@ -5,7 +5,7 @@
  * Function 3 - slider() Listener function is a btn_expand class event listener for click events to expand project details 
  * Function 4 - JQuery / JavaScript function to allow auto scroll back to top of view
  * Function 5 - scrollUp() Scroll back to top of page when clicked
- * Function 6 - swapImage(id, path) Swaps Image out from list supplied as an argument
+ * Function 6 - swapImage(id,imageList) Swaps Image out from list supplied as an argument
  * Function 7 -loadImages() Loads up images for slideshows on view
  * Dev note: work around due to getElementById bug in ASP.NET core. seems to note like overloaded function
  */
@@ -87,6 +87,4 @@ function loadImages() {
             "~/Images/imgLogoFirebase.jpg"
         ]);
     }, 3000);
-
 }
-onload = loadImages;
