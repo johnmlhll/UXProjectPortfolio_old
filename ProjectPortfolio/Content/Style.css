@@ -348,11 +348,12 @@ footer hr {
     }
 
 .btn_expand {
+    text-align: center;
     padding: 0.5%;
     border-style: ridge;
     border-radius: 10%;
     background-color: #f9fcfc;
-    margin: 1%;
+    margin: 1% auto;
     resize: both;
 }
 
@@ -452,6 +453,7 @@ footer hr {
                 resize: both;
                 position: relative;
                 font-size: 90%;
+                padding-bottom: 5%;
             }
 
             .timeline ul li div::before {
@@ -474,7 +476,7 @@ footer hr {
             }
 
         .timeline ul li:nth-child(even) div {
-            left: -369px;
+            left: -319px;
         }
 
             .timeline ul li:nth-child(even) div:before {
@@ -904,7 +906,7 @@ footer hr {
             .timeline ul li::after {
                 content: '';
                 position: absolute;
-                left: 50%;
+                left: 45%;
                 bottom: 0;
                 transform: translateX(-50%);
                 width: 35px;
@@ -921,6 +923,7 @@ footer hr {
                 -webkit-box-sizing: border-box;
                 bottom: 0;
                 padding: 15%;
+                margin: 3% 30% 0 0;
                 background: -webkit-linear-gradient(#f9fcfc, #df69ea);
                 background: -o-linear-gradient(#f9fcfc, #df69ea);
                 background: -moz-linear-gradient(#f9fcfc, #df69ea);
@@ -944,9 +947,12 @@ footer hr {
                     border-style: solid;
                 }
 
-            .timeline ul li:nth-child(odd) div,
+            .timeline ul li:nth-child(odd) div {
+                margin-left: 35%;
+            }
+
             .timeline ul li:nth-child(even) div {
-                left: 15px;
+                left: 0;
             }
 
 }
