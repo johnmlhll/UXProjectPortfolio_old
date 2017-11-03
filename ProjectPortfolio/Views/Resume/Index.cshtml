@@ -2,7 +2,7 @@
     ViewBag.Title = "Resume";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<div id="resume_wrapper">
+<article id="resume_wrapper">
     <h2>Resume</h2>
 	<p>
 	    Name: <i>John Mulhall</i> <span class="project_right">Title: <i>Software Developer | Software Engineer</i></span>
@@ -26,10 +26,6 @@
 			<li>Former process management professional with 15 years commerical experience covering 5 industry domains</li>
 			<li>Transferrable industry experience/training in Lifesciences, Food, Freight & Logistics, Financial Services and Information Technology</li>
 		</ul>
-		<p>
-            My hobbies and interests are covered in an extensive list on the 
-            @Html.ActionLink("About John", "Index", "About") page
-        </p>
 		<hr class="hr_class"> 
 	</div>
 	<!--Technical Skills Section-->
@@ -42,7 +38,7 @@
 		</p>
 		<p><strong>Enterprise Ready/Medium Skills</strong></p>
 		<p>
-			Java | Javascript | MySQL | Bash Scripting | Database Design and Development | Swing | Android | AngularJS (4) | Android |
+			Java | Javascript | MySQL | Bash Scripting | Database Design and Development | Android | AngularJS (4) | Android |
 			Server Side Programming | Algorithms | Swing | Social Media | Web Forms | Winforms | N Tier Architecture | Data Analysis |
 			Python | Pandas | Plotly
 		</p>
@@ -53,7 +49,7 @@
 	</div>
 	<hr class="hr_class">		
 	<!--Education Section-->
-    <a class="btn_expand">Education Analysis (2017) | Click for More/Less</a>
+    <a class="btn_expand">Educational Awards Analysis (2017) | Click for More/Less</a>
     <div class="portfolio_entry_detail">
         <p><strong>Top Educational Acheivement</strong></p>
         <p>
@@ -151,8 +147,16 @@
         </p>
     </div>
     <hr class="hr_class">  
+	<!--Hobbies & Interests Section-->
+    <a class="btn_expand">Hobbies, Pursuits and Interests | Click for More/Less</a>
+    <div class="portfolio_entry_detail">
+		<p>
+            Coding | Technology | Championship GAA | Good TV | Cinema | Blogging/Writing
+		</p>
+    </div>
+    <hr class="hr_class"> 
 	<!--Work Experience Section-->
-    <a class="btn_expand">Work Experience Timeline | Click for More/Less</a>
+    <a class="btn_expand">Work Experience - Summary (2017) | Click for More/Less</a>
     <div class="portfolio_entry_detail">
         <section class="timeline">
             <ul>
@@ -361,7 +365,7 @@
     </div>
     <hr class="hr_class"> 
 	<!--Project Management Section-->
-    <a class="btn_expand">Key Project Highlights | Click for More/Less</a>
+    <a class="btn_expand">Key Project Management Highlights | Click for More/Less</a>
     <div class="portfolio_entry_detail">
 		<section class="timeline">
     	    <ul>
@@ -520,6 +524,5 @@
     		</ul>	
 	    </section>
     </div>  
-    <hr class="hr_class">       
-</div>
+</article>
 

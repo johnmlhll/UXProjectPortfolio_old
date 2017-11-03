@@ -73,7 +73,7 @@ function loadImages() {
         ]);
         swapImage('slideshow_xml', [
             "~/Images/imgLogoXML.png",
-            "~/Images/imgLogoASPNETMVC.jpg",
+            "~/Images/imgLogoASPNETMVC.png",
             "~/Images/imgLogoHtml5Css3Js.png" 
         ]);
         swapImage('slideshow_android', [

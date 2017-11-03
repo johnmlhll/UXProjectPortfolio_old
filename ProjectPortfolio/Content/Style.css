@@ -17,7 +17,7 @@ body {
     margin: 1% auto;
     width: 93%;
     padding: 2% 1% 2% 5%;
-    border-radius: 3%;
+    border-radius: 1%;
     position: relative;
     background: -webkit-linear-gradient(#f9fcfc, #a2d6d6);
     background: -o-linear-gradient(#f9fcfc, #a2d6d6);
@@ -921,30 +921,12 @@ footer hr {
                 position: relative;
                 box-sizing: border-box;
                 -webkit-box-sizing: border-box;
-                bottom: 0;
-                padding: 15%;
-                margin: 3% 30% 0 0;
-                background: -webkit-linear-gradient(#f9fcfc, #df69ea);
-                background: -o-linear-gradient(#f9fcfc, #df69ea);
-                background: -moz-linear-gradient(#f9fcfc, #df69ea);
-                background: linear-gradient(#f9fcfc, #df69ea);
-                border-radius: 5%;
             }
 
                 .timeline ul li div p {
                     width: 90%;
                     resize: both;
-                    position: relative;
                     font-size: 90%;
-                }
-
-                .timeline ul li div::before {
-                    content: '';
-                    position: absolute;
-                    bottom: 3%;
-                    width: 0;
-                    height: 0;
-                    border-style: solid;
                 }
 
             .timeline ul li:nth-child(odd) div {

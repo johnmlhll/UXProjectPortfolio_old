@@ -101,7 +101,6 @@
     <Content Include="Views\About\Index.cshtml" />
     <Content Include="Scripts\JSSFile.js" />
     <Content Include="Images\imgGithubProfile.png" />
-    <Content Include="Images\imgLogoASPNETMVC.jpg" />
     <Content Include="Images\imgLogoASPRazor.png" />
     <Content Include="Images\imgLogoAzure.png" />
     <Content Include="Images\imgLogoCSharpVS.jpg" />
@@ -127,6 +126,7 @@
     <Content Include="Images\imgLogoTypeScript.png" />
     <Content Include="Images\imgMeGrad94.png" />
     <Content Include="Images\imgLogoPython.png" />
+    <Content Include="Images\imgLogoASPNETMVC.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\favicon.ico" />
