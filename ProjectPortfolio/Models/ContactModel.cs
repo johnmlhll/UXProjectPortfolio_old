@@ -14,5 +14,6 @@ namespace ProjectPortfolio.Models
         /*
          * Model Properties
          */
+
     }
 }

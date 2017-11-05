@@ -71,6 +71,7 @@ iframe {
     width: 49%;
     margin: 1% 25% 1% 25%;
     resize: both;
+    border-radius: 1%;
 }
 
 .hr_class {
@@ -353,7 +354,7 @@ footer hr {
     border-style: ridge;
     border-radius: 10%;
     background-color: #f9fcfc;
-    margin: 1% auto;
+    margin: 4% auto;
     resize: both;
 }
 
@@ -485,10 +486,51 @@ footer hr {
                 border-color: transparent transparent transparent #df69ea;
             }
 
+/*Contact John - View Styling Unrestricted*/
+#map {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    margin: 1% auto;
+    resize: both;
+}
+
+#contact_social_media {
+    width: 100%;
+}
+    #contact_social_media ul li {
+        list-style-type: none;
+    }
+
+
+#follow_icons {
+    width: 70%;
+    display: inline-table;
+    padding: 1% 4% 4% 4%;
+}
+
+    #follow_icons ul li {
+        margin: 1% auto;
+        width: 60%;
+        resize: both
+    }
+
+#online_contact_form {
+    width: 100%;
+    resize: both;
+}
+
+.validation {
+    color: red;
+    font-weight: bold;
+}
+
+
 /* Restricted Styling - 800px max Screen*/
 @media only screen and (max-width: 800px) {
     /*Responsive (<800px) - General Styling*/
-    body {
+    body; {
         background-image: none;
         padding: 0;
     }
@@ -725,6 +767,14 @@ footer hr {
             border-width: 8px 0 8px 16px;
             border-color: transparent transparent transparent #df69ea;
         }
+
+    /*Responsive(<800px) Styling - Contact View*/
+    #follow_icons {
+        width: 100%;
+        display: inline-block;
+        border-style: none;
+    }
+
 }
 
 /* Restricted Styling - 500px max Screen*/
@@ -868,9 +918,14 @@ footer hr {
             display: block;
         }
 
+    .article_title {
+        padding: 3%;
+    }
+
     .btn_expand {
         font-size: 0.6em;
-        resize: both;    
+        resize: both;  
+        margin: 20% 2% 2% 2%;  
     }
 
     .entry_urls {

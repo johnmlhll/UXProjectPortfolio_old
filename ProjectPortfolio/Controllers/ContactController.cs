@@ -16,7 +16,14 @@ namespace ProjectPortfolio.Controllers
          */
         public ActionResult Index()
         {
-            return View ();
+            return View();
+        }
+        /**
+         * Method 2 - SubmitEntry() is the submit function from the view with XML modelled contact entry
+         */
+        public ActionResult SubmitEntry()
+        {
+            return View();
         }
     }
 }
