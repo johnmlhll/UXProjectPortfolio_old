@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using ProjectPortfolio.Models;
+using System.Web.Hosting;
+using System.Xml;
+using System.Xml.Linq;
 
 namespace ProjectPortfolio.Controllers
 {
@@ -21,9 +25,24 @@ namespace ProjectPortfolio.Controllers
         /**
          * Method 2 - SubmitEntry() is the submit function from the view with XML modelled contact entry
          */
-        public ActionResult SubmitEntry()
+        public ActionResult SubmitEntry(ContactModel contact)
         {
-            return View();
+            ContactProcessor processEntry = new ContactProcessor();
+            if (ModelState.IsValid)
+            {
+                if (processEntry.PostToXMLDB(contact))
+                {
+                    return View("SubmitEntry", contact);
+                }
+                else
+                {
+                    return View();
+                }
+            }
+            else
+            {
+                return View();
+            }
         }
     }
 }

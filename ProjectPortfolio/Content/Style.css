@@ -497,17 +497,27 @@ footer hr {
 }
 
 #contact_social_media {
-    width: 100%;
+    width: 55%;
 }
+
+    #contact_social_media h3 {
+        padding: 4% 4% 0 0;        
+    }
+
     #contact_social_media ul li {
         list-style-type: none;
     }
 
-
 #follow_icons {
-    width: 70%;
+    width: 90%;
     display: inline-table;
     padding: 1% 4% 4% 4%;
+    border-radius: 10%;
+    background: -webkit-linear-gradient(#f9fcfc, #a2d6d6);
+    background: -o-linear-gradient(#f9fcfc, #a2d6d6);
+    background: -moz-linear-gradient(#f9fcfc, #a2d6d6);
+    background: linear-gradient(#f9fcfc, #a2d6d6);
+    opacity: 0.6;
 }
 
     #follow_icons ul li {
@@ -515,6 +525,10 @@ footer hr {
         width: 60%;
         resize: both
     }
+
+#follow_icons:hover {
+    opacity: 1;
+}
 
 #online_contact_form {
     width: 100%;
@@ -530,7 +544,7 @@ footer hr {
 /* Restricted Styling - 800px max Screen*/
 @media only screen and (max-width: 800px) {
     /*Responsive (<800px) - General Styling*/
-    body; {
+    body {
         background-image: none;
         padding: 0;
     }
@@ -575,7 +589,7 @@ footer hr {
     }
 
     /*Responsive (<800px) - Header Styling*/
-
+   
     #github_profile img {
         width: 14%;
         clear: both;
@@ -992,4 +1006,16 @@ footer hr {
                 left: 0;
             }
 
+    /*Responsive(<500) - Contact View Styling*/
+    #contact_social_media {
+        width: 100%;
+    }
+
+    #follow_icons {
+        width: 100%;
+        display: inline-table;
+        padding: 1% 4% 4% 4%;
+        border-radius: 0;
+    }
+                
 }
