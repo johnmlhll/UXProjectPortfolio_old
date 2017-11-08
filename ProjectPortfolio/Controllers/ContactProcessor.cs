@@ -14,12 +14,7 @@ namespace ProjectPortfolio.Controllers
         /// </summary>
 
         //Declare Variables
-        private string filePath = @"~/App_Data/contact.xml";
-
-        //Constructor
-        public ContactProcessor() {
-            
-        }
+        private string filePath = "~/App_Data/contact.xml";
 
         /**
          * Method 1 - Determine if first file and post  
@@ -27,9 +22,9 @@ namespace ProjectPortfolio.Controllers
         public bool PostToXMLDB(ContactModel contact) 
         {
             bool validEntry = false;
-            if (System.IO.File.Exists(HostingEnvironment.MapPath(filePath)) && contact.Email != null)
+            if (System.IO.File.Exists(HostingEnvironment.MapPath(filePath)))
             {
-                validEntry = PostFirstXMLEntry(contact);
+                validEntry = PostXMLEntry(contact);
             }
             else
             {
@@ -52,13 +47,31 @@ namespace ProjectPortfolio.Controllers
                     xmlWriter.WriteStartElement("Contact");
                     xmlWriter.WriteEndElement();
                     xmlWriter.WriteEndDocument();
+                    xmlWriter.Close();
+                    //load first entry
+                    XDocument contactMessage = XDocument.Load(HostingEnvironment.MapPath(filePath));
+                    XElement contactEntry = contactMessage.Element("Contact");
+                    contactEntry.Add(
+                        new XElement("ContactEntry",
+                                     new XElement("Date", DateTime.Now),
+                                     new XElement("FirstName", contact.FirstName),
+                                     new XElement("LastName", contact.LastName),
+                                     new XElement("Phone", contact.PhoneNumber),
+                                     new XElement("Email", contact.Email),
+                                     new XElement("CompanyName", contact.CompanyName),
+                                     new XElement("City", contact.City),
+                                     new XElement("Country", contact.Country),
+                                     new XElement("ContactType", contact.ContactReason),
+                                     new XElement("Message", contact.Message)
+                                    )
+                    );
+                    contactEntry.Save(HostingEnvironment.MapPath(filePath));
+                    validEntry = true;
                 }
-                //load first entry
-                validEntry = PostXMLEntry(contact);
             }
             catch (Exception e)
             {
-                Console.WriteLine("Exception Occurred in XML DB Write. Details are {0}", e.Message);
+                Console.WriteLine("Exception Occurred on First XML DB Write. Details are {0}", e.Message);
                 return validEntry;
             }
 
@@ -90,10 +103,11 @@ namespace ProjectPortfolio.Controllers
                                 )
                 );
                 contactEntry.Save(HostingEnvironment.MapPath(filePath));
+                validEntry = true;
             }
             catch (Exception e)
             {
-                Console.WriteLine("Exception Occurred in XML DB Write. Details are {0}", e.Message);
+                Console.WriteLine("Exception Occurred in XML DB Write to existing DB. Details are {0}", e.Message);
                 return validEntry;
             }
             return validEntry;

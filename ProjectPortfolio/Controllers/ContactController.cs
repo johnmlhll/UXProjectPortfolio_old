@@ -4,9 +4,6 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using ProjectPortfolio.Models;
-using System.Web.Hosting;
-using System.Xml;
-using System.Xml.Linq;
 
 namespace ProjectPortfolio.Controllers
 {
@@ -36,12 +33,12 @@ namespace ProjectPortfolio.Controllers
                 }
                 else
                 {
-                    return View();
+                    return View("Index");
                 }
             }
             else
             {
-                return View();
+                return View("Index");
             }
         }
     }

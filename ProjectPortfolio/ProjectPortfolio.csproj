@@ -136,6 +136,7 @@
   <ItemGroup>
     <None Include="Images\favicon.ico" />
     <None Include="Images\.DS_Store" />
+    <None Include="App_Data\contact.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

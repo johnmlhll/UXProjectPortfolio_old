@@ -48,7 +48,7 @@ namespace ProjectPortfolio.Models
 
         [Required(ErrorMessage = "Message missing, please enter your message now")]
         [MinLength(2, ErrorMessage = "Message must be greater than 2 characters long")]
-        [MaxLength(200, ErrorMessage = "Message must be less then 200 characters long")]
+        [MaxLength(500, ErrorMessage = "Message must be less then 500 characters long")]
         public String Message { get; set; }
     }   
 }
