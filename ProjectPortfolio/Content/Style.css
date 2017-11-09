@@ -1,5 +1,5 @@
 ﻿/*External CSS3 File for Responsive 768px/500px Designed - Project Portfolio */
-/*Un restricted Styling - Full Screen*/
+/*Unrestricted Styling - Full Screen*/
 
 /*General Styling*/
 body {
@@ -535,7 +535,7 @@ footer hr {
 }
 
 .inputbox {
-    text-align: center;
+    text-align: left;
     margin: 0 20% 2% 20%;
     font-size: 1em;
     padding: 0;
@@ -553,7 +553,8 @@ footer hr {
 
 .validation {
     color: red;
-    font-weight: bold;
+    font-weight: normal;
+    font-size: 0.9em;
 }
 
 .submit_button {
@@ -563,8 +564,9 @@ footer hr {
     color: #f9fcfc;
     background: #666699;
     padding: 1% 0 1% 0;
-    border-radius: 25%;
     font-size: 1em;
+    border-radius: 15%;
+
 }
 
     .submit_button:hover {
@@ -573,8 +575,43 @@ footer hr {
         background-color: #2eb82e;
     }
 
+/*Submit Entry(Contact) - View Styling Unrestricted*/
+successful_contact_wrapper p {
+    margin: 2%;
+}
 
-/* Restricted Styling - 800px max Screen*/
+#success_confirmation {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-style: inset;
+    padding: 3% 3% 28% 3%;
+    text-align: center;
+    margin: 5% 3% 3% 3%;
+    min-width: 300px;
+    background: -webkit-linear-gradient(#f9fcfc, #df69ea);
+    background: -o-linear-gradient(#f9fcfc, #df69ea);
+    background: -moz-linear-gradient(#f9fcfc, #df69ea);
+    background: linear-gradient(#f9fcfc, #df69ea);
+}
+    #success_confirmation ul {
+        padding: 1%;
+        margin-bottom: 1%;
+    }
+
+    #success_confirmation ul li {
+        list-style-type: none;
+        padding: 1%;
+    }
+
+#continue_buttons {
+    width: 100%;
+    resize: both;
+    text-align: center;
+    margin: 7% auto;
+    display: inline-flex;
+}
+
+/* Restricted Styling - 800px max Screen */
 @media only screen and (max-width: 800px) {
     /*Responsive (<800px) - General Styling*/
     body {
@@ -823,10 +860,10 @@ footer hr {
     }
 
     .inputbox {
-        text-align: center;
+        text-align: left;
         margin: 0 8% 2% 8%;
         font-size: 1em;
-        padding: 0;
+        padding: 1%;
         width: 80%;
         height: auto;
     }
@@ -834,10 +871,10 @@ footer hr {
         .inputbox textarea {
             margin: 1% 3% 2% 3%;
             width: 100%;
-            height: 100%;
+            height: auto;
             resize: both;
             font-size: 1em;
-            padding: 0.3%;
+            padding: 1%;
         }
 
     .submit_button {
@@ -1070,7 +1107,7 @@ footer hr {
                 left: 0;
             }
 
-    /*Responsive(<500) - Contact View Styling*/
+    /*Responsive(<500px) - Contact View Styling*/
     #contact_social_media {
         width: 100%;
         margin: 2% 0 1% 0;
@@ -1084,8 +1121,8 @@ footer hr {
     }
 
     .inputbox {
-        text-align: center;
-        font-size: 1em;
+        text-align: left;
+        font-size: 0.8em;
         padding: 0;
         width: 80%;
         height: auto;
@@ -1111,4 +1148,25 @@ footer hr {
             font-weight: normal;
             font-size: 100%;
         }
+
+    /*Responsive (<500px) - Submit Entry View*/
+    #successful_contact_wrapper {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        min-width: 330px;
+        margin: 1% auto;
+    }
+
+        #successful_contact_wrapper p {
+            padding: 4%;
+        }
+    #success_confirmation {
+            display: block;
+            border-style: none;
+            background: none;
+        }
+
+    #continue_buttons {
+        margin: 5% 20% 5% 5%;
+    }
 }

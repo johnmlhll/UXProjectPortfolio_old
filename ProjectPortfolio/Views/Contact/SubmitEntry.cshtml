@@ -4,5 +4,31 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>SubmitEntry</h2>
+<article id="successful_contact_wrapper">
+    <h2>Success</h2>
+	<p>
+        Thank you for your online contact form submission. I can confirm it was received and saved! You should expect to hear from me
+		within 48 hours if I need to contact you relating to your submitted message. Otherwise, my thanks for your submission and note all
+		contact entries are gratefully reviewed only by myself. 
+		<span class="project_right"><strong>John</strong></span>
+	</p>
+	<section id="success_confirmation">
+        <h3>Confirmation Detail</h3>
+		<ul>
+			<li><strong>Save Date:</strong> <span class="project_right">@DateTime.Now</span></li>
+			<li><strong>Sender Name:</strong> <span class="project_right">@Model.FirstName @Model.LastName</span></li>
+			<li><strong>Email:</strong> <span class="project_right">@Model.Email</span></li>
+			<li><strong>Number:</strong> <span class="project_right">@Model.PhoneNumber</span></li>
+			<li><strong>City:</strong> <span class="project_right">@Model.City</span></li>
+			<li><strong>Country:</strong> <span class="project_right">@Model.Country</span></li>
+			<li><strong>Contact Type:</strong> <span class="project_right">@Model.ContactReason</span></li>
+			<li><strong>Message:</strong> <span class="project_right">@Model.Message</span></li>
+		</ul>
+	</section>
+	<section id="continue_buttons">
+        @Html.ActionLink("New Message", "Index", "Contact", new { @class="btn_expand" })
+		@Html.ActionLink("Go to Home Page - Software Portfolio","Index","Home", new { @class="btn_expand" })
+	</section>
+</article>
+
 

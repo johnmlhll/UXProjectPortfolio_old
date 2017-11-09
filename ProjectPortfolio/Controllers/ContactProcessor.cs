@@ -15,6 +15,7 @@ namespace ProjectPortfolio.Controllers
 
         //Declare Variables
         private string filePath = "~/App_Data/contact.xml";
+        private string defaultFieldEntry = "Not Supplied";
 
         /**
          * Method 1 - Determine if first file and post  
@@ -22,6 +23,24 @@ namespace ProjectPortfolio.Controllers
         public bool PostToXMLDB(ContactModel contact) 
         {
             bool validEntry = false;
+            //validate entry for nulls
+            if (contact.FirstName == null || contact.FirstName == " ")
+            {
+                contact.FirstName = defaultFieldEntry;
+            }
+            if (contact.PhoneNumber == null || contact.PhoneNumber == " ") 
+            {
+                contact.PhoneNumber = defaultFieldEntry;
+            }
+            if(contact.CompanyName == null || contact.CompanyName == " ") 
+            {
+                contact.CompanyName = defaultFieldEntry;
+            }
+            if(contact.City == null || contact.City == " ")
+            {
+                contact.City = defaultFieldEntry;
+            }
+            //check for XML DB file and call appropriate processing helper method
             if (System.IO.File.Exists(HostingEnvironment.MapPath(filePath)))
             {
                 validEntry = PostXMLEntry(contact);

@@ -14,17 +14,17 @@
 	</p>
 	<hr class="hr_class">
 	<h3>Online Contact Form</h3>
+	<div class="validation">* Required</div>
     <div id="online_contact_form">
 		@using(Html.BeginForm("SubmitEntry", "Contact", FormMethod.Post))
 		{
             <div class="validation">@Html.ValidationSummary()</div> 
-
 		    @Html.LabelFor(c => c.FirstName)
 		    <div class="inputbox">
 		        @Html.TextBoxFor(c => c.FirstName, new { Class="inputbox" })
 		    </div>
 		
-		    @Html.LabelFor(c => c.LastName)
+		    @Html.LabelFor(c => c.LastName) <span class="validation">&nbsp;*</span>
 		    <div class="inputbox">
 		        @Html.TextBoxFor(c => c.LastName, new { Class="inputbox" })
 		    </div>
@@ -34,7 +34,7 @@
 		        @Html.TextBoxFor(c => c.PhoneNumber, new { Class="inputbox" })
 		    </div>
 		
-		    @Html.LabelFor(c => c.Email)
+		    @Html.LabelFor(c => c.Email) <span class="validation">&nbsp;*</span>
 		    <div class="inputbox">
 		        @Html.TextBoxFor(c => c.Email, new { Class="inputbox" })
 		    </div>
@@ -59,7 +59,7 @@
 		        @Html.EnumDropDownListFor(c => c.ContactReason, "Select Type of Contact", new { @class="inputbox" })
 		    </div>
 		
-            @Html.LabelFor(c => c.Message)
+            @Html.LabelFor(c => c.Message) <span class="validation">&nbsp;*</span>
 		    <div class="inputbox">
                 @Html.TextAreaFor(c => c.Message, new { @class="inputbox" })
 		    </div>
