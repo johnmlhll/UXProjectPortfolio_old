@@ -13,31 +13,31 @@ namespace ProjectPortfolio.Models
          */
         [Display(Name="First Name")]
         [MaxLength(30, ErrorMessage = "First Name should be less than 30 characters long")]
-        public String FirstName { get; set; }
+        public string FirstName { get; set; }
 
         [Display(Name="Last/Family Name")]
         [Required(ErrorMessage = "Last Name is required, please enter to proceed")]
         [MinLength(2, ErrorMessage = "Last Name must be greater than 2 characters")]
         [MaxLength(50, ErrorMessage = "Last Name must be less than 50 characters long")]
-        public String LastName { get; set; }
+        public string LastName { get; set; }
 
         [Display(Name="Phone Number")]
         [Phone(ErrorMessage = "Must be a recognised Phone Number")]
         [MaxLength(30, ErrorMessage = "Phone number must be less then 30 characters long")]
-        public String PhoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
 
         [Required(ErrorMessage = "Email is required, please enter to proceed")]
         [EmailAddress(ErrorMessage = "Email address invalid, please try again e.g. john@gmail.com")]
         [MaxLength(50, ErrorMessage = "Email address is too long, must be below 50 characters")]
-        public String Email { get; set; }
+        public string Email { get; set; }
 
         [Display(Name="Company Name")]
         [MaxLength(50, ErrorMessage = "Companyname must be less than 50 characters long")]
-        public String CompanyName { get; set; }
+        public string CompanyName { get; set; }
 
         [Display(Name="City / Area")]
         [MaxLength(50, ErrorMessage ="City must be less than 50 characters long")]
-        public String City { get; set; }
+        public string City { get; set; }
 
         [Required(ErrorMessage = "Please select your country from the dropdown list")]
         public CountryList Country { get; set; }
@@ -49,6 +49,6 @@ namespace ProjectPortfolio.Models
         [Required(ErrorMessage = "Message missing, please enter your message now")]
         [MinLength(2, ErrorMessage = "Message must be greater than 2 characters long")]
         [MaxLength(500, ErrorMessage = "Message must be less then 500 characters long")]
-        public String Message { get; set; }
+        public string Message { get; set; }
     }   
 }

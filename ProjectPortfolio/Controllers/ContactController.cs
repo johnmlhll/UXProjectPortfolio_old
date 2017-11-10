@@ -33,6 +33,7 @@ namespace ProjectPortfolio.Controllers
                 }
                 else
                 {
+                    ModelState.Clear();
                     return View("Index");
                 }
             }

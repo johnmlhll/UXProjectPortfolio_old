@@ -10,7 +10,6 @@
         Thank you for your online contact form submission. I can confirm it was received and saved! You should expect to hear from me
 		within 48 hours if I need to contact you relating to your submitted message. Otherwise, my thanks for your submission and note all
 		contact entries are gratefully reviewed only by myself. 
-		<span class="project_right"><strong>John</strong></span>
 	</p>
 	<section id="success_confirmation">
         <h3>Confirmation Detail</h3>
@@ -26,8 +25,8 @@
 		</ul>
 	</section>
 	<section id="continue_buttons">
-        @Html.ActionLink("New Message", "Index", "Contact", new { @class="btn_expand" })
-		@Html.ActionLink("Go to Home Page - Software Portfolio","Index","Home", new { @class="btn_expand" })
+        <p>@Html.ActionLink("New Message - Contact John", "Index", "Contact", new { @class="btn_expand" })</p>
+		<p>@Html.ActionLink("Home", "Index", "Home")</p>	
 	</section>
 </article>
 
