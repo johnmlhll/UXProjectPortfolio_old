@@ -129,14 +129,13 @@ header {
 
 #navbar_tab {
     display: inline-block;
-    }
+}
 
     #navbar_tab h3 {
         color: #0d0d0d;
         transform: rotate(90deg);
         margin-top: 38%;
     }
-
 
 #nav {
     box-sizing: border-box;
@@ -187,11 +186,11 @@ header {
         color: #ffffff;
     }
 
-#restricted_nav { /* <768px */
+#restricted_nav { /* <800px */
     display: none;
 }
 
-#unrestricted_nav { /* >768px */
+#unrestricted_nav { /* >800px */
     display: inline-block;
 }
 
@@ -211,6 +210,7 @@ header {
 footer {
     width: 100%;
 }
+
 footer hr {
     clear: both;
     width: 90%;
@@ -576,7 +576,8 @@ footer hr {
     }
 
 /*Submit Entry(Contact) - View Styling Unrestricted*/
-successful_contact_wrapper p {
+
+#successful_contact_wrapper p {
     margin: 2%;
 }
 
@@ -614,6 +615,35 @@ successful_contact_wrapper p {
     #continue_buttons p {
         text-align: center;     
     }
+
+/* Sitemap Styling - Unrestricted */
+#sitemap_wrapper {
+    margin: 1% auto;
+}
+
+#sitemap_urls {
+    text-align: center;
+    width: 100%;
+    resize: both;
+    margin: 1.5% auto;
+}
+
+    #sitemap_urls a img {
+        width: 32%;
+        resize: both;
+        float: left;
+        margin: 1% 15% 1% 15%;
+    }
+
+    #sitemap_urls ul li {
+        list-style-type: none;
+        padding: 1.3%;
+    }
+
+#sitemap_url ul li:hover {
+    color: #2eb82e;
+}
+
 /* Restricted Styling - 800px max Screen */
 @media only screen and (max-width: 800px) {
     /*Responsive (<800px) - General Styling*/
@@ -1017,7 +1047,7 @@ successful_contact_wrapper p {
         list-style-type: none;
         clear: both;
         width: 60%;
-        margin: -19% 0% 0 75%;
+        margin: -20% 0% 0 75%;
         position: relative;
     }
 
@@ -1175,3 +1205,4 @@ successful_contact_wrapper p {
         margin: 5% 20% 5% 5%;
     }
 }
+/*End of CSS Style File*/

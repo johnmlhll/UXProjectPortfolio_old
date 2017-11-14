@@ -80,6 +80,7 @@
     <Compile Include="Models\CountryList.cs" />
     <Compile Include="Models\ContactType.cs" />
     <Compile Include="Controllers\ContactProcessor.cs" />
+    <Compile Include="Controllers\SitemapController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
@@ -132,6 +133,8 @@
     <Content Include="Images\imgLogoPython.png" />
     <Content Include="Images\imgLogoASPNETMVC.png" />
     <Content Include="Views\Contact\SubmitEntry.cshtml" />
+    <Content Include="Views\Sitemap\Index.cshtml" />
+    <Content Include="Images\imgCompass.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\favicon.ico" />

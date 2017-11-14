@@ -36,7 +36,7 @@ namespace ProjectPortfolio.Tests.Controllers
          * Test 2 - test connectivity with the framework by the About Controller. 
          */
         [Test]
-        public void TestAboutController() 
+        public void TestAboutController()
         {
 
             var aboutController = new AboutController();
@@ -50,7 +50,7 @@ namespace ProjectPortfolio.Tests.Controllers
          * Test 3 - test connectivity with the framework by the IrishTechNews Controller. 
          */
         [Test]
-        public void TestIrishTechNewsController() 
+        public void TestIrishTechNewsController()
         {
             var irishTechNewsController = new IrishTechNewsController();
 
@@ -71,7 +71,20 @@ namespace ProjectPortfolio.Tests.Controllers
             Assert.NotNull(result);
         }
         /**
-         * Test 5 - test connectivity with the framework by the Contact Controller. 
+         * Test 5 - test connectivity with the framework by the Sitemap Controller
+         */
+        [Test]
+        public void TestSitemapController()
+        {
+            var sitemapController = new SitemapController();
+
+            var result = (ActionResult)sitemapController.Index();
+
+            Assert.NotNull(sitemapController);
+        }
+
+        /**
+         * Test 6 - test connectivity with the framework by the Contact Controller. 
          */
         [Test]
         public void TestContactController()
@@ -85,7 +98,7 @@ namespace ProjectPortfolio.Tests.Controllers
 
         //ContactModel - Data Model Tests
         /**
-         * Test 6 - test Contact DataModel Enum fields for correct user defined enum datatype 
+         * Test 7 - test Contact DataModel Enum fields for correct user defined enum datatype 
          */
         [Test]
         public void TestContactModelEnums()
@@ -99,8 +112,8 @@ namespace ProjectPortfolio.Tests.Controllers
             Assert.True(resultContactCountry == typeof(CountryList));
         }
         /**
-         * Test 7 - test Contact String Fields on online contact form
-         */ 
+         * Test 8 - test Contact String Fields on online contact form
+         */
         [Test]
         public void TestContactModelStringFields()
         {
@@ -130,7 +143,7 @@ namespace ProjectPortfolio.Tests.Controllers
             Assert.True(resultMessageDataType == typeof(string));
         }
         /**
-         * Test 8 - test Controller and Model Validation on the dataModel for "Required" fields
+         * Test 9 - test Controller and Model Validation on the dataModel for "Required" fields
          */
         [Test]
         public void TestContactValidationRequiredFields()
@@ -148,10 +161,10 @@ namespace ProjectPortfolio.Tests.Controllers
             Assert.True(testValidation.ModelState.IsValid == true); //confirmations data valiation via modelstate
         }
         /**
-         * Test 9 - test ContactProcessor class for posting of XML entry to Native XML DB 
+         * Test 10 - test ContactProcessor class for posting of XML entry to Native XML DB 
          */
         [Test]
-        public void TestPostXMLEntryToDB() 
+        public void TestPostXMLEntryToDB()
         {
             ContactController contactController = new ContactController();
             var contactXMLPosting = new ContactModel();
@@ -163,11 +176,22 @@ namespace ProjectPortfolio.Tests.Controllers
             contactXMLPosting.City = "Dublin";
             contactXMLPosting.Message = "Test Data to See if message posts to XML DB";
             contactXMLPosting.Country = CountryList.Ireland;
-            contactXMLPosting.ContactReason = ContactType.EmploymentOpportunity; 
+            contactXMLPosting.ContactReason = ContactType.EmploymentOpportunity;
 
-            var postingResult = contactController.SubmitEntry(contactXMLPosting); 
+            var postingResult = contactController.SubmitEntry(contactXMLPosting);
 
             Assert.NotNull(postingResult);
+        }
+        /*
+         * Test 11 - test ContactProcessor.PostToXMLDB to see if it throws NullReferenceException 
+         */
+        [Test]
+        public void TestPostXMLEntryToDBException() 
+        {
+            ContactProcessor nullEntry = null;
+            ContactModel nullContact = null;
+
+            Assert.Throws<NullReferenceException>(() => nullEntry.PostToXMLDB(nullContact));
         }
     }
 }

@@ -1,15 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Contact>
-  <ContactEntry>
-    <Date>2017-11-10T15:29:20.11888+00:00</Date>
-    <FirstName>Luke</FirstName>
-    <LastName>Skywalker</LastName>
-    <Phone>0832432432</Phone>
-    <Email>luke@force.com</Email>
-    <CompanyName>Jedi Ltd</CompanyName>
-    <City>Dublin</City>
-    <Country>Ireland</Country>
-    <ContactType>General</ContactType>
-    <Message>Hey guys, you seen Hans and Chewey.. those guys are on the beer again!</Message>
-  </ContactEntry>
+
 </Contact>
