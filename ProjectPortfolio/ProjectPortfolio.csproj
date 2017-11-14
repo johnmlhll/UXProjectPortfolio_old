@@ -98,7 +98,6 @@
     <Content Include="Images\imgShareTwitter.png" />
     <Content Include="Images\imgConnectLinkedin.png" />
     <Content Include="Content\Style.css" />
-    <Content Include="Images\imgCoderJohn.jpg" />
     <Content Include="Images\imgConnectTwitter.png" />
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\IrishTechNews\Index.cshtml" />
@@ -135,6 +134,8 @@
     <Content Include="Views\Contact\SubmitEntry.cshtml" />
     <Content Include="Views\Sitemap\Index.cshtml" />
     <Content Include="Images\imgCompass.png" />
+    <Content Include="Images\imgIrishTechNews.png" />
+    <Content Include="Images\imgJohnGrad17ProPic.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\favicon.ico" />

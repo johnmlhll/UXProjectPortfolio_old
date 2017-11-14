@@ -67,7 +67,7 @@ a {
         text-decoration: none;
     }
 
-iframe {
+iframe, #itn_portfolio_image img {
     width: 49%;
     margin: 1% 25% 1% 25%;
     resize: both;
