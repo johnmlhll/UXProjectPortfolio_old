@@ -58,33 +58,32 @@ function swapImage(id, imageList) {
     htmlSlideshowId.count = (htmlSlideshowId.count + 1); imageList.length;
 }
 
-
 function loadImages() {
     setInterval(function() {
         swapImage('slideshow_csharp', [
-            "~/Images/imgLogoCSharpVS.jpg",
-            "~/Images/imgLogoMicrosoftSQLServer.png",
-            "~/Images/imgLogoJava8.png"
+            "/Images/imgLogoCSharpVS.jpg",
+            "/Images/imgLogoMicrosoftSQLServer.png",
+            "/Images/imgLogoJava8.png"
         ]);
         swapImage('slideshow_bash', [
-            "~/Images/imgLogoBash.png",
-            "~/Images/imgLogoDotNet.png",
-            "~/Images/imgLogoPostgreSQL.png"
+            "/Images/imgLogoBash.png",
+            "/Images/imgLogoDotNet.png",
+            "/Images/imgLogoPostgreSQL.png"
         ]);
         swapImage('slideshow_xml', [
-            "~/Images/imgLogoXML.png",
-            "~/Images/imgLogoASPNETMVC.png",
-            "~/Images/imgLogoHtml5Css3Js.png" 
+            "/Images/imgLogoXML.png",
+            "/Images/imgLogoASPNETMVC.png",
+            "/Images/imgLogoHtml5Css3Js.png" 
         ]);
         swapImage('slideshow_android', [
-            "~/Images/imgLogoAndroid.png",
-            "~/Images/imgLogoAngular4TS.png",
-            "~/Images/imgLogoMySQL.png"    
+            "/Images/imgLogoAndroid.png",
+            "/Images/imgLogoAngular4TS.png",
+            "/Images/imgLogoMySQL.png"    
         ]);
         swapImage('slideshow_python', [
-            "~/Images/imgLogoPython.png",
-            "~/Images/imgLogoLinux.png",
-            "~/Images/imgLogoFirebase.jpg"
+            "/Images/imgLogoPython.png",
+            "/Images/imgLogoLinux.png",
+            "/Images/imgLogoFirebase.jpg"
         ]);
     }, 3000);
 }

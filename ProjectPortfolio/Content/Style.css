@@ -566,7 +566,6 @@ footer hr {
     padding: 1% 0 1% 0;
     font-size: 1em;
     border-radius: 15%;
-
 }
 
     .submit_button:hover {
@@ -1172,7 +1171,7 @@ footer hr {
         }
 
     .submit_button {
-        width: 27%;
+        width: 34%;
         box-sizing: border-box;
         -webkit-box-sizing: border-box;
         font-weight: normal;
